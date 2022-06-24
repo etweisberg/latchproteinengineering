@@ -8,8 +8,8 @@
 ## Protein engineering pipeline
 
 1. Obtain enzyme structure (crystal structure)
-2. Study catalytic mechanism (GROMACS)
-3. Build a substrate-enzyme complex (GALigandDock)
+2. Study catalytic mechanism (GROMACS/AMBER)
+3. Build a substrate-enzyme complex (Rosetta - GALigandDock)
 4. Identify design positions through conservation analysis (ConSurf)
 5. Activity and specificity engineering (FuncLib)
 6. Screening (Rosetta/flexddG)
