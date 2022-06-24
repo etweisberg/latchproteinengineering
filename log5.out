@@ -1,0 +1,5 @@
+2022-06-23 14:59:59,035 [MainThread  ] [INFO ]  Not using any container
+2022-06-23 14:59:59,657 [MainThread  ] [INFO ]  reduce -NUClear -OH -ROTNH3 -ALLALT input/pl3.pdb > input/pl3.reduce.H.pdb
+
+2022-06-23 14:59:59,659 [MainThread  ] [INFO ]  Exit code 0
+

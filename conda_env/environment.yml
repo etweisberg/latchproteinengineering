@@ -1,0 +1,15 @@
+name: biobb_AMBER_MD
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - biobb_analysis==3.6.0
+  - biobb_io==3.6.0
+  - biobb_structure_utils==3.6.1
+  - biobb_chemistry==3.6.0
+  - biobb_amber==3.6.2
+  - nb_conda_kernels
+  - plotly
+  - nglview
+  - simpletraj
+  - conda
