@@ -1,0 +1,15 @@
+; pl3params.qIJPU2_GMX.top created by acpype (v: 2019-11-07T23:16:00CET) on Wed Jun 29 22:28:03 2022
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+; Include pl3params.qIJPU2_GMX.itp topology
+#include "pl3params.qIJPU2_GMX.itp"
+
+[ system ]
+ pl3params.qIJPU2
+
+[ molecules ]
+; Compound        nmols
+ pl3params.qIJPU2 1     

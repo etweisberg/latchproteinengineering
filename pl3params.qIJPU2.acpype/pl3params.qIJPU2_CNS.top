@@ -1,0 +1,359 @@
+Remarks pl3params.qIJPU2_CNS.top created by acpype (v: 2019-11-07T23:16:00CET) on Wed Jun 29 22:28:03 2022
+
+set echo=false end
+
+autogenerate angles=True dihedrals=True end
+
+{ atomType  mass }
+MASS c3_     12.010
+MASS o_      16.000
+MASS hc_      1.008
+MASS h1_      1.008
+
+RESIdue PL3
+
+GROUP
+
+{ atomName  atomType  Charge }
+ATOM CA    TYPE= c3_   CHARGE=  -0.0764 END
+ATOM CB    TYPE= c3_   CHARGE=  -0.0784 END
+ATOM CG    TYPE= c3_   CHARGE=  -0.0921 END
+ATOM CD    TYPE= c3_   CHARGE=  -0.0784 END
+ATOM CE    TYPE= c3_   CHARGE=  -0.0764 END
+ATOM C1    TYPE= c3_   CHARGE=   0.4361 END
+ATOM O1    TYPE= o_    CHARGE=  -0.9065 END
+ATOM C2    TYPE= c3_   CHARGE=  -0.1604 END
+ATOM C3    TYPE= c3_   CHARGE=  -0.0634 END
+ATOM C4    TYPE= c3_   CHARGE=  -0.0804 END
+ATOM C5    TYPE= c3_   CHARGE=  -0.0784 END
+ATOM C6    TYPE= c3_   CHARGE=  -0.0794 END
+ATOM C7    TYPE= c3_   CHARGE=  -0.0794 END
+ATOM C8    TYPE= c3_   CHARGE=  -0.0794 END
+ATOM C9    TYPE= c3_   CHARGE=  -0.0794 END
+ATOM CC    TYPE= c3_   CHARGE=  -0.0784 END
+ATOM CF    TYPE= c3_   CHARGE=  -0.0824 END
+ATOM HGC3  TYPE= hc_   CHARGE=   0.0304 END
+ATOM HGC2  TYPE= hc_   CHARGE=   0.0304 END
+ATOM HGC1  TYPE= hc_   CHARGE=   0.0304 END
+ATOM HFC2  TYPE= hc_   CHARGE=   0.0427 END
+ATOM HFC1  TYPE= hc_   CHARGE=   0.0427 END
+ATOM HEC2  TYPE= hc_   CHARGE=   0.0352 END
+ATOM HEC1  TYPE= hc_   CHARGE=   0.0352 END
+ATOM HDC2  TYPE= hc_   CHARGE=   0.0387 END
+ATOM HDC1  TYPE= hc_   CHARGE=   0.0387 END
+ATOM HCC2  TYPE= hc_   CHARGE=   0.0397 END
+ATOM HCC1  TYPE= hc_   CHARGE=   0.0397 END
+ATOM HBC2  TYPE= hc_   CHARGE=   0.0392 END
+ATOM HBC1  TYPE= hc_   CHARGE=   0.0392 END
+ATOM HAC2  TYPE= hc_   CHARGE=   0.0347 END
+ATOM HAC1  TYPE= hc_   CHARGE=   0.0347 END
+ATOM H9C2  TYPE= hc_   CHARGE=   0.0377 END
+ATOM H9C1  TYPE= hc_   CHARGE=   0.0377 END
+ATOM H8C2  TYPE= hc_   CHARGE=   0.0372 END
+ATOM H8C1  TYPE= hc_   CHARGE=   0.0372 END
+ATOM H7C2  TYPE= hc_   CHARGE=   0.0367 END
+ATOM H7C1  TYPE= hc_   CHARGE=   0.0367 END
+ATOM H6C2  TYPE= hc_   CHARGE=   0.0347 END
+ATOM H6C1  TYPE= hc_   CHARGE=   0.0347 END
+ATOM H5C2  TYPE= hc_   CHARGE=   0.0327 END
+ATOM H5C1  TYPE= hc_   CHARGE=   0.0327 END
+ATOM H4C2  TYPE= hc_   CHARGE=   0.0287 END
+ATOM H4C1  TYPE= hc_   CHARGE=   0.0287 END
+ATOM H3C2  TYPE= hc_   CHARGE=   0.0217 END
+ATOM H3C1  TYPE= hc_   CHARGE=   0.0217 END
+ATOM H2C2  TYPE= hc_   CHARGE=   0.0097 END
+ATOM H2C1  TYPE= hc_   CHARGE=   0.0097 END
+ATOM H1C2  TYPE= h1_   CHARGE=  -0.1483 END
+ATOM H1C1  TYPE= h1_   CHARGE=  -0.1483 END
+
+{ Bonds: atomName1  atomName2 }
+BOND CA    HAC1 
+BOND CA    HAC2 
+BOND CB    HBC2 
+BOND CB    HBC1 
+BOND CG    HGC1 
+BOND CG    HGC3 
+BOND CG    HGC2 
+BOND CD    HDC2 
+BOND CD    HDC1 
+BOND CE    HEC2 
+BOND CE    HEC1 
+BOND C1    H1C2 
+BOND C1    H1C1 
+BOND C2    H2C1 
+BOND C2    H2C2 
+BOND C3    H3C2 
+BOND C3    H3C1 
+BOND C4    H4C1 
+BOND C4    H4C2 
+BOND C5    H5C1 
+BOND C5    H5C2 
+BOND C6    H6C2 
+BOND C6    H6C1 
+BOND C7    H7C1 
+BOND C7    H7C2 
+BOND C8    H8C2 
+BOND C8    H8C1 
+BOND C9    H9C1 
+BOND C9    H9C2 
+BOND CC    HCC1 
+BOND CC    HCC2 
+BOND CF    HFC1 
+BOND CF    HFC2 
+BOND CA    CB   
+BOND CA    C9   
+BOND CB    CC   
+BOND CG    CF   
+BOND CD    CE   
+BOND CD    CC   
+BOND CE    CF   
+BOND C1    O1   
+BOND C1    C2   
+BOND C2    C3   
+BOND C3    C4   
+BOND C4    C5   
+BOND C5    C6   
+BOND C6    C7   
+BOND C7    C8   
+BOND C8    C9   
+
+{ Angles: atomName1 atomName2 atomName3}
+ANGLe CA    CB    HBC2 
+ANGLe CA    CB    HBC1 
+ANGLe CA    C9    H9C1 
+ANGLe CA    C9    H9C2 
+ANGLe CB    CC    HCC1 
+ANGLe CB    CC    HCC2 
+ANGLe CB    CA    HAC1 
+ANGLe CB    CA    HAC2 
+ANGLe CG    CF    HFC1 
+ANGLe CG    CF    HFC2 
+ANGLe CD    CE    HEC2 
+ANGLe CD    CE    HEC1 
+ANGLe CD    CC    HCC1 
+ANGLe CD    CC    HCC2 
+ANGLe CE    CF    HFC1 
+ANGLe CE    CF    HFC2 
+ANGLe CE    CD    HDC2 
+ANGLe CE    CD    HDC1 
+ANGLe C1    C2    H2C1 
+ANGLe C1    C2    H2C2 
+ANGLe O1    C1    H1C2 
+ANGLe O1    C1    H1C1 
+ANGLe C2    C1    H1C2 
+ANGLe C2    C1    H1C1 
+ANGLe C2    C3    H3C2 
+ANGLe C2    C3    H3C1 
+ANGLe C3    C2    H2C1 
+ANGLe C3    C2    H2C2 
+ANGLe C3    C4    H4C1 
+ANGLe C3    C4    H4C2 
+ANGLe C4    C3    H3C2 
+ANGLe C4    C3    H3C1 
+ANGLe C4    C5    H5C1 
+ANGLe C4    C5    H5C2 
+ANGLe C5    C4    H4C1 
+ANGLe C5    C4    H4C2 
+ANGLe C5    C6    H6C2 
+ANGLe C5    C6    H6C1 
+ANGLe C6    C5    H5C1 
+ANGLe C6    C5    H5C2 
+ANGLe C6    C7    H7C1 
+ANGLe C6    C7    H7C2 
+ANGLe C7    C6    H6C2 
+ANGLe C7    C6    H6C1 
+ANGLe C7    C8    H8C2 
+ANGLe C7    C8    H8C1 
+ANGLe C8    C7    H7C1 
+ANGLe C8    C7    H7C2 
+ANGLe C8    C9    H9C1 
+ANGLe C8    C9    H9C2 
+ANGLe C9    C8    H8C2 
+ANGLe C9    C8    H8C1 
+ANGLe C9    CA    HAC1 
+ANGLe C9    CA    HAC2 
+ANGLe CC    CD    HDC2 
+ANGLe CC    CD    HDC1 
+ANGLe CC    CB    HBC2 
+ANGLe CC    CB    HBC1 
+ANGLe CF    CG    HGC1 
+ANGLe CF    CG    HGC3 
+ANGLe CF    CG    HGC2 
+ANGLe CF    CE    HEC2 
+ANGLe CF    CE    HEC1 
+ANGLe HGC3  CG    HGC1 
+ANGLe HGC3  CG    HGC2 
+ANGLe HGC2  CG    HGC1 
+ANGLe HFC2  CF    HFC1 
+ANGLe HEC2  CE    HEC1 
+ANGLe HDC2  CD    HDC1 
+ANGLe HCC2  CC    HCC1 
+ANGLe HBC2  CB    HBC1 
+ANGLe HAC2  CA    HAC1 
+ANGLe H9C2  C9    H9C1 
+ANGLe H8C2  C8    H8C1 
+ANGLe H7C2  C7    H7C1 
+ANGLe H6C2  C6    H6C1 
+ANGLe H5C2  C5    H5C1 
+ANGLe H4C2  C4    H4C1 
+ANGLe H3C2  C3    H3C1 
+ANGLe H2C2  C2    H2C1 
+ANGLe H1C2  C1    H1C1 
+ANGLe CA    CB    CC   
+ANGLe CA    C9    C8   
+ANGLe CB    CC    CD   
+ANGLe CB    CA    C9   
+ANGLe CG    CF    CE   
+ANGLe CD    CE    CF   
+ANGLe CE    CD    CC   
+ANGLe C1    C2    C3   
+ANGLe O1    C1    C2   
+ANGLe C2    C3    C4   
+ANGLe C3    C4    C5   
+ANGLe C4    C5    C6   
+ANGLe C5    C6    C7   
+ANGLe C6    C7    C8   
+ANGLe C7    C8    C9   
+
+{ Proper Dihedrals: name1 name2 name3 name4 }
+DIHEdral CA    CB    CC    HCC1 
+DIHEdral CA    CB    CC    HCC2 
+DIHEdral CA    C9    C8    H8C2 
+DIHEdral CA    C9    C8    H8C1 
+DIHEdral CB    CC    CD    HDC2 
+DIHEdral CB    CC    CD    HDC1 
+DIHEdral CB    CA    C9    H9C1 
+DIHEdral CB    CA    C9    H9C2 
+DIHEdral CG    CF    CE    HEC2 
+DIHEdral CG    CF    CE    HEC1 
+DIHEdral CD    CE    CF    HFC1 
+DIHEdral CD    CE    CF    HFC2 
+DIHEdral CD    CC    CB    HBC2 
+DIHEdral CD    CC    CB    HBC1 
+DIHEdral CE    CF    CG    HGC1 
+DIHEdral CE    CF    CG    HGC3 
+DIHEdral CE    CF    CG    HGC2 
+DIHEdral CE    CD    CC    HCC1 
+DIHEdral CE    CD    CC    HCC2 
+DIHEdral C1    C2    C3    H3C2 
+DIHEdral C1    C2    C3    H3C1 
+DIHEdral O1    C1    C2    H2C1 
+DIHEdral O1    C1    C2    H2C2 
+DIHEdral C2    C3    C4    H4C1 
+DIHEdral C2    C3    C4    H4C2 
+DIHEdral C3    C2    C1    H1C2 
+DIHEdral C3    C2    C1    H1C1 
+DIHEdral C3    C4    C5    H5C1 
+DIHEdral C3    C4    C5    H5C2 
+DIHEdral C4    C3    C2    H2C1 
+DIHEdral C4    C3    C2    H2C2 
+DIHEdral C4    C5    C6    H6C2 
+DIHEdral C4    C5    C6    H6C1 
+DIHEdral C5    C4    C3    H3C2 
+DIHEdral C5    C4    C3    H3C1 
+DIHEdral C5    C6    C7    H7C1 
+DIHEdral C5    C6    C7    H7C2 
+DIHEdral C6    C5    C4    H4C1 
+DIHEdral C6    C5    C4    H4C2 
+DIHEdral C6    C7    C8    H8C2 
+DIHEdral C6    C7    C8    H8C1 
+DIHEdral C7    C6    C5    H5C1 
+DIHEdral C7    C6    C5    H5C2 
+DIHEdral C7    C8    C9    H9C1 
+DIHEdral C7    C8    C9    H9C2 
+DIHEdral C8    C7    C6    H6C2 
+DIHEdral C8    C7    C6    H6C1 
+DIHEdral HAC1  CA    C9    C8   
+DIHEdral HAC2  CA    C9    C8   
+DIHEdral C9    C8    C7    H7C1 
+DIHEdral C9    C8    C7    H7C2 
+DIHEdral C9    CA    CB    HBC2 
+DIHEdral C9    CA    CB    HBC1 
+DIHEdral CC    CD    CE    HEC2 
+DIHEdral CC    CD    CE    HEC1 
+DIHEdral HAC1  CA    CB    CC   
+DIHEdral HAC2  CA    CB    CC   
+DIHEdral CF    CE    CD    HDC2 
+DIHEdral CF    CE    CD    HDC1 
+DIHEdral HGC3  CG    CF    HFC1 
+DIHEdral HGC3  CG    CF    HFC2 
+DIHEdral HGC2  CG    CF    HFC1 
+DIHEdral HGC2  CG    CF    HFC2 
+DIHEdral HGC1  CG    CF    HFC1 
+DIHEdral HGC1  CG    CF    HFC2 
+DIHEdral HFC2  CF    CE    HEC2 
+DIHEdral HFC2  CF    CE    HEC1 
+DIHEdral HFC1  CF    CE    HEC2 
+DIHEdral HFC1  CF    CE    HEC1 
+DIHEdral HEC2  CE    CD    HDC2 
+DIHEdral HEC2  CE    CD    HDC1 
+DIHEdral HEC1  CE    CD    HDC2 
+DIHEdral HEC1  CE    CD    HDC1 
+DIHEdral HDC2  CD    CC    HCC1 
+DIHEdral HDC2  CD    CC    HCC2 
+DIHEdral HDC1  CD    CC    HCC1 
+DIHEdral HDC1  CD    CC    HCC2 
+DIHEdral HCC2  CC    CB    HBC2 
+DIHEdral HCC2  CC    CB    HBC1 
+DIHEdral HCC1  CC    CB    HBC2 
+DIHEdral HCC1  CC    CB    HBC1 
+DIHEdral HAC1  CA    CB    HBC2 
+DIHEdral HAC2  CA    CB    HBC2 
+DIHEdral HAC1  CA    CB    HBC1 
+DIHEdral HAC2  CA    CB    HBC1 
+DIHEdral HAC2  CA    C9    H9C1 
+DIHEdral HAC2  CA    C9    H9C2 
+DIHEdral HAC1  CA    C9    H9C1 
+DIHEdral HAC1  CA    C9    H9C2 
+DIHEdral H9C2  C9    C8    H8C2 
+DIHEdral H9C2  C9    C8    H8C1 
+DIHEdral H9C1  C9    C8    H8C2 
+DIHEdral H9C1  C9    C8    H8C1 
+DIHEdral H8C2  C8    C7    H7C1 
+DIHEdral H8C2  C8    C7    H7C2 
+DIHEdral H8C1  C8    C7    H7C1 
+DIHEdral H8C1  C8    C7    H7C2 
+DIHEdral H7C2  C7    C6    H6C2 
+DIHEdral H7C2  C7    C6    H6C1 
+DIHEdral H7C1  C7    C6    H6C2 
+DIHEdral H7C1  C7    C6    H6C1 
+DIHEdral H6C2  C6    C5    H5C1 
+DIHEdral H6C2  C6    C5    H5C2 
+DIHEdral H6C1  C6    C5    H5C1 
+DIHEdral H6C1  C6    C5    H5C2 
+DIHEdral H5C2  C5    C4    H4C1 
+DIHEdral H5C2  C5    C4    H4C2 
+DIHEdral H5C1  C5    C4    H4C1 
+DIHEdral H5C1  C5    C4    H4C2 
+DIHEdral H4C2  C4    C3    H3C2 
+DIHEdral H4C2  C4    C3    H3C1 
+DIHEdral H4C1  C4    C3    H3C2 
+DIHEdral H4C1  C4    C3    H3C1 
+DIHEdral H3C2  C3    C2    H2C1 
+DIHEdral H3C2  C3    C2    H2C2 
+DIHEdral H3C1  C3    C2    H2C1 
+DIHEdral H3C1  C3    C2    H2C2 
+DIHEdral H2C2  C2    C1    H1C2 
+DIHEdral H2C2  C2    C1    H1C1 
+DIHEdral H2C1  C2    C1    H1C2 
+DIHEdral H2C1  C2    C1    H1C1 
+DIHEdral CA    CB    CC    CD   
+DIHEdral CA    C9    C8    C7   
+DIHEdral CB    CC    CD    CE   
+DIHEdral CB    CA    C9    C8   
+DIHEdral CG    CF    CE    CD   
+DIHEdral C1    C2    C3    C4   
+DIHEdral O1    C1    C2    C3   
+DIHEdral C2    C3    C4    C5   
+DIHEdral C3    C4    C5    C6   
+DIHEdral C4    C5    C6    C7   
+DIHEdral C5    C6    C7    C8   
+DIHEdral C6    C7    C8    C9   
+DIHEdral C9    CA    CB    CC   
+DIHEdral CC    CD    CE    CF   
+
+{ Improper Dihedrals: aName1 aName2 aName3 aName4 }
+
+END {RESIdue PL3}
+
+set echo=true end

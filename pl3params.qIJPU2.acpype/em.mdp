@@ -1,0 +1,5 @@
+; to test
+; gmx grompp -f em.mdp -c pl3params.qIJPU2_GMX.gro -p pl3params.qIJPU2_GMX.top -o em.tpr -v
+; gmx mdrun -ntmpi 1 -v -deffnm em
+integrator               = steep
+nsteps                   = 500

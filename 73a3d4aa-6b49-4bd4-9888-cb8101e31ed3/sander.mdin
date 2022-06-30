@@ -1,0 +1,22 @@
+This mdin file has been created by the biobb_amber module from the BioBB library 
+Type of mdin: heat
+&cntrl
+  imin = 0 ! BioBB simulation_type nvt|npt|free|heat
+  cut = 10.0 ! BioBB simulation_type nvt|npt|free|heat
+  ntr = 1 ! BioBB property
+  ntc = 2 ! BioBB simulation_type nvt|npt|free|heat
+  ntf = 2 ! BioBB simulation_type nvt|npt|free|heat
+  ntt = 3 ! BioBB simulation_type nvt|npt|free|heat
+  ig = -1 ! BioBB simulation_type nvt|npt|free|heat
+  ioutfm = 1 ! BioBB simulation_type nvt|npt|free|heat
+  iwrap = 1 ! BioBB simulation_type nvt|npt|free|heat
+  nstlim = 2500 ! BioBB property
+  dt = 0.002 ! BioBB simulation_type nvt|npt|free|heat
+  tempi = 0.0 ! BioBB simulation_type heat
+  temp0 = 300.0 ! BioBB simulation_type heat
+  irest = 0 ! BioBB simulation_type heat
+  ntb = 1 ! BioBB simulation_type heat
+  gamma_ln = 1.0 ! BioBB simulation_type heat
+  restraintmask = "!:WAT,Cl-,Na+" ! BioBB property
+  restraint_wt = 10.0 ! BioBB property
+&end
