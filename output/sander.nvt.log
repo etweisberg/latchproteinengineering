@@ -1,0 +1,284 @@
+
+          -------------------------------------------------------
+          Amber 20 SANDER                              2020
+          -------------------------------------------------------
+
+| Run on 07/08/2022 at 12:11:01
+
+|   Executable path: sander
+| Working directory: /Users/ethan/EthanLatchProj
+|          Hostname: Unknown
+  [-O]verwriting output
+
+File Assignments:
+|  MDIN: b991f5a0-f11e-4aca-a902-96aed3110716/sander.mdin                      
+| MDOUT: output/sander.nvt.log                                                 
+|INPCRD: output/sander.heat.rst                                                
+|  PARM: input/structure.ions.parmtop                                          
+|RESTRT: output/sander.nvt.rst                                                 
+|  REFC: output/sander.heat.rst                                                
+| MDVEL: mdvel                                                                 
+| MDFRC: mdfrc                                                                 
+|  MDEN: mden                                                                  
+| MDCRD: output/sander.nvt.netcdf                                              
+|MDINFO: mdinfo                                                                
+|  MTMD: mtmd                                                                  
+|INPDIP: inpdip                                                                
+|RSTDIP: rstdip                                                                
+|INPTRA: inptraj                                                               
+
+
+ Here is the input file:
+
+This mdin file has been created by the biobb_amber module from the BioBB library
+Type of mdin: nvt                                                              
+&cntrl                                                                         
+  imin = 0 ! BioBB simulation_type nvt|npt|free|heat                           
+  cut = 10.0 ! BioBB simulation_type nvt|npt|free|heat                         
+  ntr = 1 ! BioBB property                                                     
+  ntc = 2 ! BioBB simulation_type nvt|npt|free|heat                            
+  ntf = 2 ! BioBB simulation_type nvt|npt|free|heat                            
+  ntt = 3 ! BioBB simulation_type nvt|npt|free|heat                            
+  ig = -1 ! BioBB simulation_type nvt|npt|free|heat                            
+  ioutfm = 1 ! BioBB simulation_type nvt|npt|free|heat                         
+  iwrap = 1 ! BioBB simulation_type nvt|npt|free|heat                          
+  nstlim = 100 ! BioBB property                                                
+  dt = 0.002 ! BioBB simulation_type nvt|npt|free|heat                         
+  irest = 1 ! BioBB simulation_type nvt                                        
+  gamma_ln = 5.0 ! BioBB simulation_type nvt                                   
+  ntb = 1 ! BioBB simulation_type nvt                                          
+  ntx = 5 ! BioBB simulation_type nvt                                          
+  restraintmask = "!:WAT,Cl-,Na+ & !@H=" ! BioBB property                      
+  restraint_wt = 5.0 ! BioBB property                                          
+&end                                                                           
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+ getting box info from netcdf restart file
+| NetCDF restart box info found
+|Largest sphere to fit in unit cell has radius =    29.670
+| New format PARM file being parsed.
+| Version =    1.000 Date = 06/29/22 Time = 22:33:09
+ NATOM  =   25484 NTYPES =      18 NBONH =   23644 MBONA  =    1816
+ NTHETH =    3988 MTHETA =    2439 NPHIH =    7986 MPHIA  =    7651
+ NHPARM =       0 NPARM  =       0 NNB   =   48654 NRES   =    7574
+ NBONA  =    1816 NTHETA =    2439 NPHIA =    7651 NUMBND =      71
+ NUMANG =     159 NPTRA  =     192 NATYP =      41 NPHB   =       1
+ IFBOX  =       2 NMXRS  =      50 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+
+|     Memory Use     Allocated
+|     Real             2420207
+|     Hollerith          84028
+|     Integer          1350882
+|     Max Pairs       14678784
+|     nblistReal        305808
+|     nblist Int        868675
+|       Total            87634 kbytes
+
+| Note: 1-4 EEL scale factors are being read from the topology file.
+
+| Note: 1-4 VDW scale factors are being read from the topology file.
+| Duplicated    0 dihedrals
+| Duplicated    0 dihedrals
+
+     BOX TYPE: TRUNCATED OCTAHEDRON
+Note: ig = -1. Setting random seed to   764531 based on wallclock time in microseconds.
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+default_name                                                                    
+
+General flags:
+     imin    =       0, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       5, irest   =       1, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       2, ntpr    =      50, ntrx    =       1, ntwr    =     100
+     iwrap   =       1, ntwx    =       0, ntwv    =       0, ntwe    =       0
+     ioutfm  =       1, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       2, ntb     =       1, igb     =       0, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     dielc   =   1.00000, cut     =  10.00000, intdiel =   1.00000
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       1
+     restraint_wt =   5.00000
+
+Molecular dynamics:
+     nstlim  =       100, nscm    =         0, nrespa  =         1
+     t       =   0.00000, dt      =   0.00200, vlimit  =  20.00000
+
+Langevin dynamics temperature regulation:
+     ig      =  764531
+     temp0   = 300.00000, tempi   =   0.00000, gamma_ln=   5.00000
+
+SHAKE:
+     ntc     =       2, jfastw  =       0
+     tol     =   0.00001
+
+Ewald parameters:
+     verbose =       0, ew_type =       0, nbflag  =       1, use_pme =       1
+     vdwmeth =       1, eedmeth =       1, netfrc  =       1
+     Box X =   72.676   Box Y =   72.676   Box Z =   72.676
+     Alpha =  109.471   Beta  =  109.471   Gamma =  109.471
+     NFFT1 =   72       NFFT2 =   72       NFFT3 =   72
+     Cutoff=   10.000   Tol   =0.100E-04
+     Ewald Coefficient =  0.27511
+     Interpolation order =    4
+|  INFO: Old style inpcrd file read
+
+
+    LOADING THE CONSTRAINED ATOMS AS GROUPS
+
+
+   5.  REFERENCE ATOM COORDINATES
+
+  defa
+     Mask !:WAT,Cl-,Na+ & !@H=; matches  1785 atoms
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+default_name                                                                    
+ begin time read from input coords =     5.000 ps
+
+ Number of triangulated 3-point waters found:     7298
+
+     Sum of charges from parm topology file =   0.00100090
+     Forcing neutrality...
+
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+|  # of SOLUTE  degrees of freedom (RNDFP):   52808.
+|  # of SOLVENT degrees of freedom (RNDFS):       0.
+|  NDFMIN =   52808.     NUM_NOSHAKE =      0     CORRECTED RNDFP =   52808.
+|  TOTAL # of degrees of freedom (RNDF) =   52808.
+ ---------------------------------------------------
+ APPROXIMATING switch and d/dx switch using CUBIC SPLINE INTERPOLATION
+ using   5000.0 points per unit in tabled values
+ TESTING RELATIVE ERROR over r ranging from 0.0 to cutoff
+| CHECK switch(x): max rel err =   0.2738E-14   at   2.422500
+| CHECK d/dx switch(x): max rel err =   0.8314E-11   at   2.736960
+ ---------------------------------------------------
+| Local SIZE OF NONBOND LIST =    7989546
+| TOTAL SIZE OF NONBOND LIST =    7989546
+
+ NSTEP =       50   TIME(PS) =       5.100  TEMP(K) =   292.14  PRESS =     0.0
+ Etot   =    -63484.4171  EKtot   =     15328.4452  EPtot      =    -78812.8623
+ BOND   =       633.3216  ANGLE   =      1713.8469  DIHED      =      2912.7083
+ 1-4 NB =       838.8242  1-4 EEL =      9058.9018  VDWAALS    =      7818.3487
+ EELEC  =   -102200.1365  EHBOND  =         0.0000  RESTRAINT  =       411.3228
+ EAMBER (non-restraint)  =    -79224.1851
+ Ewald error estimate:   0.2113E-04
+ ------------------------------------------------------------------------------
+
+wrapping first mol.:      -24.22535      -34.25982       59.33975
+
+ NSTEP =      100   TIME(PS) =       5.200  TEMP(K) =   293.96  PRESS =     0.0
+ Etot   =    -63297.8943  EKtot   =     15424.1887  EPtot      =    -78722.0830
+ BOND   =       645.1819  ANGLE   =      1701.2215  DIHED      =      2915.4003
+ 1-4 NB =       837.4041  1-4 EEL =      9132.4366  VDWAALS    =      7948.9801
+ EELEC  =   -102291.0778  EHBOND  =         0.0000  RESTRAINT  =       388.3703
+ EAMBER (non-restraint)  =    -79110.4533
+ Ewald error estimate:   0.8241E-04
+ ------------------------------------------------------------------------------
+
+
+      A V E R A G E S   O V E R     100 S T E P S
+
+
+ NSTEP =      100   TIME(PS) =       5.200  TEMP(K) =   293.64  PRESS =     0.0
+ Etot   =    -63422.6758  EKtot   =     15407.1487  EPtot      =    -78829.8245
+ BOND   =       654.2645  ANGLE   =      1688.4843  DIHED      =      2902.1468
+ 1-4 NB =       856.9786  1-4 EEL =      9121.8092  VDWAALS    =      7943.9042
+ EELEC  =   -102325.2808  EHBOND  =         0.0000  RESTRAINT  =       327.8686
+ EAMBER (non-restraint)  =    -79157.6931
+ Ewald error estimate:   0.3827E-04
+ ------------------------------------------------------------------------------
+
+
+      R M S  F L U C T U A T I O N S
+
+
+ NSTEP =      100   TIME(PS) =       5.200  TEMP(K) =     1.72  PRESS =     0.0
+ Etot   =       120.5470  EKtot   =        90.4822  EPtot      =       124.1124
+ BOND   =        16.6840  ANGLE   =        30.3342  DIHED      =        20.1762
+ 1-4 NB =        12.7746  1-4 EEL =        32.2616  VDWAALS    =       110.4443
+ EELEC  =        95.7400  EHBOND  =         0.0000  RESTRAINT  =       132.2854
+ EAMBER (non-restraint)  =        -8.1730
+ Ewald error estimate:   0.2655E-04
+ ------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+   5.  TIMINGS
+--------------------------------------------------------------------------------
+
+|                Build the list             8.20 (99.70% of List )
+|                Other                      0.02 ( 0.30% of List )
+|             List time                  8.22 (17.78% of Nonbo)
+|                   Short_ene time            34.86 (99.47% of Direc)
+|                   Other                      0.19 ( 0.53% of Direc)
+|                Direct Ewald time         35.05 (92.19% of Ewald)
+|                Adjust Ewald time          0.13 ( 0.34% of Ewald)
+|                   Fill Bspline coeffs        0.08 ( 2.98% of Recip)
+|                   Fill charge grid           0.28 (10.07% of Recip)
+|                   Scalar sum                 0.89 (31.51% of Recip)
+|                   Grad sum                   0.56 (20.02% of Recip)
+|                   FFT time                   0.99 (35.41% of Recip)
+|                   Other                      0.00 ( 0.01% of Recip)
+|                Recip Ewald time           2.81 ( 7.39% of Ewald)
+|                Force Adjust               0.00 ( 0.01% of Ewald)
+|                Virial junk                0.01 ( 0.02% of Ewald)
+|                Other                      0.02 ( 0.05% of Ewald)
+|             Ewald time                38.02 (82.22% of Nonbo)
+|          Nonbond force             46.24 (99.60% of Force)
+|          Bond/Angle/Dihedral        0.18 ( 0.39% of Force)
+|          Other                      0.00 ( 0.01% of Force)
+|       Force time                46.43 (98.18% of Runmd)
+|       Shake time                 0.09 ( 0.19% of Runmd)
+|       Verlet update time         0.76 ( 1.61% of Runmd)
+|       Other                      0.01 ( 0.02% of Runmd)
+|    Runmd Time                47.29 (99.64% of Total)
+|    Other                      0.17 ( 0.36% of Total)
+| Total time                47.46 (100.0% of ALL  )
+
+| Number of list builds   :         12
+
+| Highest rstack allocated:    1492906
+| Highest istack allocated:      25484
+
+| Final Performance Info:
+| -----------------------------------------------------
+| Average timings for all steps:
+|     Elapsed(s) =      47.29 Per Step(ms) =     472.89
+|         ns/day =       0.37   seconds/ns =  236445.50
+| -----------------------------------------------------
+
+|           Job began  at 12:11:01.625  on 07/08/2022
+|           Setup done at 12:11:01.799  on 07/08/2022
+|           Run   done at 12:11:49.087  on 07/08/2022
+|     wallclock() was called    4439 times
+
+|3D-RISM memory allocation summary
+|Type          Maximum        Current   
+|Integer       0.00000 GB     0.00000 GB
+|Real          0.00000 GB     0.00000 GB
+|Logical       0.00000 GB     0.00000 GB
+|Character     0.00000 GB     0.00000 GB
+|---------------------------------------
+|Total         0.00000 GB     0.00000 GB
